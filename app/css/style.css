@@ -1,0 +1,199 @@
+a:focus, input:focus {
+  outline: none; }
+
+.top-social {
+  float: right;
+  margin: 50px 22px 0 0; }
+  .top-social__facebook {
+    background: url("../img/sprite-social.png") 25% 5% no-repeat; }
+  .top-social__twitter {
+    background: url("../img/sprite-social.png") 48% 72% no-repeat; }
+  .top-social__youtube {
+    background: url("../img/sprite-social.png") 48% 95% no-repeat; }
+  .top-social__pinterest {
+    background: url("../img/sprite-social.png") 37% 50% no-repeat; }
+  .top-social__instagram {
+    background: url("../img/sprite-social.png") 53% 28% no-repeat; }
+  .top-social__link {
+    float: left;
+    min-width: 16px;
+    height: 16px;
+    margin-right: 10px; }
+
+.toggle-lang {
+  float: left;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .toggle-lang__ar-d {
+    color: #fff;
+    margin-left: 5px;
+    font-size: 12px; }
+  .toggle-lang__promo {
+    color: #fff; }
+  .toggle-lang__menu {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style-type: none; }
+  .toggle-lang__link {
+    color: #000; }
+    .toggle-lang__link:hover {
+      color: inherit;
+      text-decoration: underline; }
+
+.logo {
+  margin: 24px 0 42px 64px; }
+
+.basket__header {
+  overflow: hidden;
+  height: 27px;
+  background-color: #f8f8f8; }
+
+.basket__log, .basket__list {
+  text-transform: uppercase;
+  color: #fb4d01;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 27px; }
+  .basket__log:hover, .basket__list:hover {
+    text-decoration: none;
+    color: #fb4d01;
+    opacity: 0.8; }
+
+.basket__log {
+  float: left;
+  margin-left: 33px; }
+
+.basket__list {
+  float: right;
+  margin-right: 31px; }
+
+.basket__main {
+  background-color: #fb4d01; }
+
+.basket__main-left {
+  float: left;
+  width: 79.2%;
+  padding: 14px 5px 13px 26px; }
+
+.basket__main-right {
+  float: right;
+  width: 19.2%;
+  text-align: center;
+  padding-top: 18px; }
+
+.basket__edit {
+  display: block;
+  color: #333;
+  font-family: Raleway,sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 20px;
+  background: url("../img/cross.png") 50% 0 no-repeat; }
+  .basket__edit:hover {
+    text-decoration: none;
+    color: #333;
+    opacity: 0.8; }
+
+.basket__cart-check-wrap {
+  clear: both;
+  overflow: hidden; }
+
+.basket__view, .basket__checkout {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 27px;
+  line-height: 27px;
+  background-color: #ee4a02;
+  color: #fff;
+  font-family: Raleway,sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .basket__view:hover, .basket__checkout:hover {
+    background-color: #e24602; }
+
+.truck__bg {
+  display: inline-block;
+  width: 41px;
+  height: 35px;
+  background: url("../img/icon-cart.png") no-repeat;
+  margin-right: 13px; }
+  .truck__bg:hover {
+    opacity: 0.8; }
+
+.truck__price-wrap {
+  display: inline-block; }
+
+.truck__price {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600; }
+
+.truck__item-in-bask {
+  display: block;
+  color: #faef03;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 9px; }
+  .truck__item-in-bask:hover {
+    text-decoration: none;
+    color: #faef03;
+    opacity: 0.8; }
+
+.search__form {
+  overflow: hidden;
+  height: 34px; }
+
+.search__text, .search__submit, .search__x {
+  float: left; }
+
+.search__text {
+  width: 78%;
+  height: 100%;
+  color: #0c0c0c;
+  font-family: Raleway,sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 0 0 13px;
+  border: 0;
+  background-color: #e9e9e9; }
+
+.search__submit {
+  width: 13%;
+  border: 0;
+  height: 100%;
+  padding: 0;
+  background: url("../img/search-icon.png") 50% 50% #333 no-repeat; }
+  .search__submit:hover {
+    opacity: 0.9; }
+
+.search__x {
+  height: 100%;
+  width: 9%;
+  cursor: pointer;
+  background: url("../img/x.png") 47% 50% #e9e9e9 no-repeat; }
+
+.header-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1; }
+  .header-bg__main {
+    max-width: 1500px;
+    margin: 0 auto; }
