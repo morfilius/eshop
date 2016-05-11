@@ -17,6 +17,10 @@ $(document).ready(function(){
 	$('.carousel-1').owlCarousel({
 		items: 1,
 		loop:  true,
+		nav:   true,
+		dot:  true,
+		animateOut: 'fadeOut',
+		navText: ["<i class='fa fa-chevron-left owl__nav-item' aria-hidden='true'></i>","<i class='fa fa-chevron-right owl__nav-item' aria-hidden='true'></i>"],
 	});
 
 })

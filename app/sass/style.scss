@@ -5,10 +5,11 @@ a:focus,input:focus {
 	outline: none;
 }
 
-
 .top-social {
 	float: right;
+	position: relative;
 	margin: 50px 22px 0 0;
+	z-index: 2;
 	&__facebook {
 		background: url('../img/sprite-social.png') 25% 5% no-repeat;
 	}
@@ -55,9 +56,9 @@ a:focus,input:focus {
 		list-style-type: none;
 	}
 	&__link {
-		color: #000;
+		color: #fff;
 		&:hover {
-			color: inherit;
+			color: #fff;
 			text-decoration: underline;
 		}
 	}
@@ -65,9 +66,20 @@ a:focus,input:focus {
 
 .logo {
 	margin: 24px 0 42px 64px;
+	user-select: none;
+	position: relative;
+	z-index: 2;
+}
+
+.header-indent {
+	max-height: 512px;
+	&__left-col {
+		z-index: 2;
+	}
 }
 
 .basket {
+	margin-bottom: 9px;
 	&__header {
 		overflow: hidden;
 		height: 27px;
@@ -225,9 +237,123 @@ a:focus,input:focus {
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 1;
 	&__main {
 		max-width: 1500px;
 		margin: 0 auto;
+	}
+}
+
+.carousel-1 {
+	&__title {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 34px;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	&__desc {
+		position: absolute;
+		width: 313px;
+		left: 60%;
+		top: 35%;
+		color: #fff51f;
+		font-family: Raleway,sans-serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	&__text {
+		margin-top: 10px;
+	}
+}
+
+.owl {
+	&-nav {
+		position: absolute;
+		top: 314px;
+		right: 166px;
+	}
+	&-prev,&-next {
+		width: 30px;
+		height: 50px;
+		background-color: #fff;
+		float: left;
+		text-align: center;
+		&:hover {
+			background-color: #fbde06;
+		}
+	}
+	&__nav-item {
+		font-weight: 900;
+		font-size: 16px;
+		line-height: 50px;
+	}
+	&-dots {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: 64px;
+	}
+	&-dot {
+		display: inline-block;
+		height: 4px;
+		width: 40px;
+		margin-right: 10px;
+		background-color: #faef03;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			background-color: #fb4d01;
+		}
+	}
+}
+
+.button {
+	display: inline-block;
+	color: #000;
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}
+	//mods
+	&_font_1 {
+		font-family: Raleway,sans-serif;
+		font-size: 14px;
+		font-weight: 800;
+		line-height: 10px;
+		text-transform: uppercase;
+		padding: 20px 30px 19px 28px;
+	}
+	&_bg_1 {
+		background-color: #fff51f;
+		&:hover {
+			background-color: darken(#fff51f,10%);
+		}
+	}
+	&_size_1 {
+		min-width: 124px;
+	}
+}
+
+.banner-1 {
+	background-color: #fff51f;
+	min-height: 300px;
+	padding: 82px 30px 82px 25px;
+	margin-bottom: 44px;
+	color: #333;
+	font-family: Raleway,sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 14px;
+	&__title {
+		margin: 0 0 24px;
+		font-size: 30px;
+		line-height: 30px;
+		text-transform: uppercase;
+	}
+	&__text {
+		margin: 0;
 	}
 }
