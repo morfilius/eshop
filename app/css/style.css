@@ -92,7 +92,7 @@ a:focus, input:focus {
   .basket__main-left {
     float: left;
     width: 79.2%;
-    padding: 14px 5px 13px 26px; }
+    padding: 10px 5px 12px 26px; }
   .basket__main-right {
     float: right;
     width: 19.2%;
@@ -133,9 +133,9 @@ a:focus, input:focus {
 .truck__bg {
   display: inline-block;
   width: 41px;
-  height: 35px;
-  background: url("../img/icon-cart.png") no-repeat;
-  margin-right: 13px; }
+  height: 37px;
+  background: url("../img/icon-cart.png") 0 3px no-repeat;
+  margin-right: 10px; }
   .truck__bg:hover {
     opacity: 0.8; }
 
@@ -214,7 +214,7 @@ a:focus, input:focus {
 .carousel-1__desc {
   position: absolute;
   width: 313px;
-  left: 60%;
+  left: 61%;
   top: 35%;
   color: #fff51f;
   font-family: Raleway,sans-serif;
@@ -223,7 +223,7 @@ a:focus, input:focus {
   line-height: 24px; }
 
 .carousel-1__text {
-  margin-top: 10px; }
+  margin: 10px 0 55px; }
 
 .owl-nav {
   position: absolute;
@@ -248,7 +248,7 @@ a:focus, input:focus {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: 64px; }
+  bottom: 8.5%; }
 
 .owl-dot {
   display: inline-block;
