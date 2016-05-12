@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	
 	///toggle-lang
+
 	var tl = $('.toggle-lang');
 	tl.find('.toggle-lang__menu').hide();
 	tl.on('click',function () {
@@ -10,6 +11,7 @@ $(document).ready(function(){
 
 
 	//search
+
 	$('.search__x').on('click', function() {
 		$(this).siblings('.search__text').val('');
 	});
@@ -17,6 +19,7 @@ $(document).ready(function(){
 
 
 	//carousel-1 //index
+
 	$('.carousel-1').owlCarousel({
 		items: 1,
 		loop:  true,
@@ -29,12 +32,23 @@ $(document).ready(function(){
 
 
 	
+	//new product //index
 
+	if($('.new-products-js')) {
+		products($('.new-products-js'),$('#products__nav-container-js'));
+	}
 
-	products($('.new-products-js'),$('#products__nav-container-js'));
+	//top product //index
 
+	if($('.new-products-js')) {
+		products($('.top-products-js'),$('#products__nav-container-2-js'));
+	}
 
+	//sale product //index
 
+	if($('.new-products-js')) {
+		products($('.sale-products-js'),$('#products__nav-container-3-js'));
+	}
 
 	// функции
 	
@@ -51,6 +65,8 @@ $(document).ready(function(){
 			items:      1,
 			animateOut: 'fadeOut',
 			dots:       false,
+			mouseDrag:  false,
+			touchDrag:  false,
 		});
 
 		prev.css({
