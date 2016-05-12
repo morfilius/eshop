@@ -5,6 +5,21 @@ a:focus,input:focus {
 	outline: none;
 }
 
+html,body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	background-color: #f8f8f8
+}
+.wrap {
+	min-height: 100%;
+	//margin-bottom: -100px;
+}
+.main {
+	//padding-bottom: 100px;
+}
+
 .top-social {
 	float: right;
 	position: relative;
@@ -57,7 +72,7 @@ a:focus,input:focus {
 	}
 	&__link {
 		color: #fff;
-		&:hover {
+		&:hover,&:focus {
 			color: #fff;
 			text-decoration: underline;
 		}
@@ -92,7 +107,7 @@ a:focus,input:focus {
 		font-size: 12px;
 		font-weight: 300;
 		line-height: 27px;
-		&:hover {
+		&:hover,&:focus {
 			text-decoration: none;
 			color: #fb4d01;
 			opacity: 0.8;
@@ -129,7 +144,7 @@ a:focus,input:focus {
 		text-transform: uppercase;
 		padding-top: 20px;
 		background: url('../img/cross.png') 50% 0 no-repeat;
-		&:hover {
+		&:hover,&:focus {
 			text-decoration: none;
 			color: #333;
 			opacity: 0.8;
@@ -152,7 +167,7 @@ a:focus,input:focus {
 		font-weight: 400;
 		text-transform: uppercase;
 		cursor: pointer;
-		&:hover {
+		&:hover,&:focus {
 			background-color: #e24602;
 		}
 	}
@@ -166,7 +181,7 @@ a:focus,input:focus {
 		height: 37px;
 		background: url('../img/icon-cart.png') 0 3px no-repeat;
 		margin-right: 10px;
-		&:hover {
+		&:hover,&:focus {
 			opacity: 0.8;
 		}
 	}
@@ -186,7 +201,7 @@ a:focus,input:focus {
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 9px;
-		&:hover {
+		&:hover,&:focus {
 			text-decoration: none;
 			color: #faef03;
 			opacity: 0.8;
@@ -220,7 +235,7 @@ a:focus,input:focus {
 		height: 100%;
 		padding: 0;
 		background: url('../img/search-icon.png') 50% 50% #333 no-repeat;
-		&:hover {
+		&:hover,&:focus {
 			opacity: 0.9;
 		}
 	}
@@ -280,7 +295,7 @@ a:focus,input:focus {
 		background-color: #fff;
 		float: left;
 		text-align: center;
-		&:hover {
+		&:hover,&:focus {
 			background-color: #fbde06;
 		}
 	}
@@ -310,30 +325,22 @@ a:focus,input:focus {
 	}
 }
 
-.button {
+.button-1 {
 	display: inline-block;
 	color: #000;
-	&:hover {
+	font-family: Raleway,sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 49px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 10px;
+	background-color: #fff51f;
+	min-width: 124px;
+	&:hover,&:focus {
 		text-decoration: none;
 		color: #000;
-	}
-	//mods
-	&_font_1 {
-		font-family: Raleway,sans-serif;
-		font-size: 14px;
-		font-weight: 800;
-		line-height: 10px;
-		text-transform: uppercase;
-		padding: 20px 30px 19px 28px;
-	}
-	&_bg_1 {
-		background-color: #fff51f;
-		&:hover {
-			background-color: darken(#fff51f,10%);
-		}
-	}
-	&_size_1 {
-		min-width: 124px;
+		background-color: darken(#fff51f,10%);
 	}
 }
 
@@ -355,5 +362,83 @@ a:focus,input:focus {
 	}
 	&__text {
 		margin: 0;
+	}
+}
+
+.central-part {
+	z-index: 2;
+	position: relative;
+}
+
+.products {
+	background-color: #f8f8f8;
+	padding-top: 31px;
+	&__title {
+		display: inline-block;
+		color: #707070;
+		font-family: Roboto,sans-serif;
+		font-size: 22px;
+		font-weight: 900;
+		font-style: italic;
+		text-transform: uppercase;
+		margin: 0 0 31px 25px;
+	}
+	&__nav {
+		float: right;
+		margin-right: 20px;
+	}
+	&__prev,&__next {
+		display: inline-block;
+		cursor: pointer;
+		text-align: center;
+	}
+	&__prev-icon,&__next-icon {
+		font-size: 20px;
+		line-height: 30px;
+		width: 25px;
+	}
+	&__row {
+		margin-bottom: 30px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.product {
+	height: 320px;
+	padding: 10px;
+	background-color: #fff;
+	&__text {
+		padding: 15px 10px 5px 12px;
+	}
+	&__title {
+		display: inline;
+		color: #333;
+		font-family: Roboto,sans-serif;
+		font-size: 14px;
+		font-weight: 900;
+		font-style: italic;
+		line-height: 18px;
+		margin: 0;
+	}
+	&__price-layout {
+		float: right;
+	}
+	&__price,&__price-old {
+		margin: 0;
+		font-family: Roboto,sans-serif;
+		font-weight: 900;
+		font-style: italic;
+	}
+	&__price {
+		color: #333;
+		font-size: 18px;
+	}
+	&__price-old {
+		color: #e24602;
+		font-size: 14px;
+		text-decoration: line-through;
+		line-height: 12px;
 	}
 }
