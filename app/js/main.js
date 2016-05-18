@@ -9,13 +9,11 @@ $(document).ready(function(){
 	})
 
 
-
 	//search
 
 	$('.search__x').on('click', function() {
 		$(this).siblings('.search__text').val('');
 	});
-
 
 
 	//carousel-1 //index
@@ -29,8 +27,6 @@ $(document).ready(function(){
 		navText: ["<i class='fa fa-chevron-left owl__nav-item' aria-hidden='true'></i>","<i class='fa fa-chevron-right owl__nav-item' aria-hidden='true'></i>"],
 	});
 
-
-
 	
 	//new product //index
 
@@ -40,21 +36,56 @@ $(document).ready(function(){
 
 	//top product //index
 
-	if($('.new-products-js')) {
+	if($('.top-products-js')) {
 		products($('.top-products-js'),$('#products__nav-container-2-js'));
 	}
 
 	//sale product //index
 
-	if($('.new-products-js')) {
+	if($('.sale-products-js')) {
 		products($('.sale-products-js'),$('#products__nav-container-3-js'));
 	}
+
+	//widget-1
+
+	if($('.widget-1')) {
+		widget1();
+	}
+	
 
 	// функции
 	
 
 	// container    - jq обьект контейнера для итемов овл карусели
 	// navContainer - jq обьект контейнера для кнопок навигации
+
+	function widget1() {
+		var ilh = $('.widget-1__item-layout').height();
+		var lh  = $('.widget-1__layout').height();
+		var v   = $('.widget-1__view');
+		var sum = ilh-lh;
+
+		if(sum>10) {
+			v.css({
+				'display': 'inline-block',
+			});
+			v.on('click', function() {
+				var widget = $(this).parent('.widget-1');
+				var l      = widget.find('.widget-1__layout');
+				if (l.attr('style')) {
+					l.removeAttr('style')
+					return;
+				}
+				l.css({
+					'max-height': '2500px',
+				});
+			});
+		}else{
+			v.css({
+				display: 'none',
+			});
+		};
+	}
 
 	function products(container,navContainer) {
 		var npj = container;

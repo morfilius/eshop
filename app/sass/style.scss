@@ -95,15 +95,15 @@ body {
 
 .basket {
 	margin-bottom: 9px;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
 	&__header {
 		overflow: hidden;
 		height: 27px;
 		background-color: #f8f8f8;
 	}
 	&__log,&__list {
-		text-transform: uppercase;
 		color: #fb4d01;
-		font-family: 'Raleway', sans-serif;
 		font-size: 12px;
 		font-weight: 300;
 		line-height: 27px;
@@ -138,10 +138,8 @@ body {
 	&__edit {
 		display: block;
 		color: #333;
-		font-family: Raleway,sans-serif;
 		font-size: 10px;
 		font-weight: 300;
-		text-transform: uppercase;
 		padding-top: 20px;
 		background: url('../img/cross.png') 50% 0 no-repeat;
 		&:hover,&:focus {
@@ -162,10 +160,8 @@ body {
 		line-height: 27px;
 		background-color: #ee4a02;
 		color: #fff;
-		font-family: Raleway,sans-serif;
 		font-size: 11px;
 		font-weight: 400;
-		text-transform: uppercase;
 		cursor: pointer;
 		&:hover,&:focus {
 			background-color: #e24602;
@@ -175,6 +171,8 @@ body {
 }
 
 .truck {
+	font-family: 'Raleway',sans-serif;
+	text-transform: lowercase;
 	&__bg {
 		display: inline-block;
 		width: 41px;
@@ -190,14 +188,12 @@ body {
 	}
 	&__price {
 		color: #fff;
-		font-family: Raleway;
 		font-size: 18px;
 		font-weight: 600;
 	}
 	&__item-in-bask {
 		display: block;
 		color: #faef03;
-		font-family: Raleway;
 		font-size: 12px;
 		font-weight: 400;
 		line-height: 9px;
@@ -210,6 +206,8 @@ body {
 }
 
 .search {
+	font-family: Raleway,sans-serif;
+	text-transform: uppercase;
 	&__form {
 		overflow: hidden;
 		height: 34px;
@@ -221,10 +219,8 @@ body {
 		width: 78%;
 		height: 100%;
 		color: #0c0c0c;
-		font-family: Raleway,sans-serif;
 		font-size: 10px;
 		font-weight: 400;
-		text-transform: uppercase;
 		padding: 0 0 0 13px;
 		border: 0;
 		background-color: #e9e9e9
@@ -260,6 +256,7 @@ body {
 }
 
 .carousel-1 {
+	font-family: Raleway,sans-serif;
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
@@ -273,7 +270,6 @@ body {
 		left: 61%;
 		top: 35%;
 		color: #fff51f;
-		font-family: Raleway,sans-serif;
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 24px;
@@ -344,6 +340,8 @@ body {
 	}
 }
 
+// banners begin
+
 .banner-1 {
 	background-color: #fff51f;
 	min-height: 300px;
@@ -365,6 +363,98 @@ body {
 	}
 }
 
+.banner-2 {
+	height: 300px;
+	background-color: #e0e0e0;
+	position: relative;
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+	&__title {
+		position: absolute;
+		top: 129px;
+		left: 142px;
+		width: 109px;
+		color: #333;
+		font-family: Raleway,sans-serif;
+		font-size: 36px;
+		font-weight: 800;
+		line-height: 36px;
+		text-transform: uppercase;
+	}
+}
+// end banners
+
+// widgets begin
+
+.widget-1 {
+	padding: 32px 30px 27px;
+	font-family: Roboto,sans-serif;
+	background-color: #fff;
+	&__title {
+		color: #000;
+		font-size: 24px;
+		font-weight: 900;
+		font-style: italic;
+	}
+	&__item-layout {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		overflow: hidden;
+		// mods
+		&_pos_1 {
+			margin: 0 -8px -8px 0;
+		}
+	}
+	&__layout {
+		max-height: 256px;
+		overflow: hidden;
+		transition: 0.3s;
+	}
+	&__item {
+		font-weight: 400;
+		// mods
+		&_tags {
+			float: left;
+			margin: 0 8px 8px 0;
+		}
+	}
+	&__link {
+		&_tags {
+			display: block;
+			color: #333;
+			font-size: 14px;
+			line-height: 30px;
+			padding: 0 11px;
+			background-color: #e9e9e9;
+			transition: 0.2s;
+			&:hover,&:focus {
+				color: inherit;
+				text-decoration: none;
+				background-color: #faef03;
+			}
+		}
+	}
+	&__view {
+		color: #000;
+		font-size: 14px;
+		font-family: Roboto;
+		font-weight: 900;
+		font-style: italic;
+		display: inline-block;
+		margin-top: 20px;
+		cursor: pointer;
+		user-select:none;
+		&:hover,&:focus {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}
+
+// widgets end
 .central-part {
 	z-index: 2;
 	position: relative;
@@ -374,10 +464,10 @@ body {
 	background-color: #f8f8f8;
 	padding-top: 23px;
 	margin-bottom: 46px;
+	font-family: Roboto,sans-serif;
 	&__title {
 		display: inline-block;
 		color: #707070;
-		font-family: Roboto,sans-serif;
 		font-size: 22px;
 		font-weight: 900;
 		font-style: italic;
@@ -416,6 +506,7 @@ body {
 	height: 320px;
 	padding: 10px;
 	background-color: #fff;
+	font-family: Roboto,sans-serif;
 	&__link {
 		display: block;
 		height: 100%;
@@ -440,7 +531,6 @@ body {
 	&__title {
 		display: inline;
 		color: #333;
-		font-family: Roboto,sans-serif;
 		font-size: 14px;
 		font-weight: 900;
 		font-style: italic;
@@ -452,7 +542,6 @@ body {
 	}
 	&__price,&__price-old {
 		margin: 0;
-		font-family: Roboto,sans-serif;
 		font-weight: 900;
 		font-style: italic;
 	}
@@ -465,5 +554,113 @@ body {
 		font-size: 14px;
 		text-decoration: line-through;
 		line-height: 12px;
+	}
+}
+
+.sidebar {
+	&__item {
+		margin-bottom: 30px;
+	}
+}
+
+.toggle-ul {
+	padding: 0 0 0 27px;
+	background-color: #75e3fe;
+	list-style-type: square;
+	font-family: 'Roboto',sans-serif;
+	text-transform: uppercase;
+	&__item {
+		position: relative;
+		white-space: nowrap;
+		padding-right: 40px;
+		// mods
+		&_drop {
+			background: url('../img/ar-r.png') 87% 50% no-repeat;
+			&:hover>.nav-menu__slide {
+				visibility: visible;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+	}
+	&__link {
+		color: #000;
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 36px;
+		width: 100%;
+		display: block;
+		&:hover,&:focus {
+			text-decoration: none;
+			color: #333;
+		}
+	}
+	// mods
+	&_pos_1 {
+		position: absolute;
+		top: 0;
+		left: 100%;
+		z-index: 2;
+	}
+	&_level_2 {
+		background-color: #81e6ff;
+		.toggle-ul__link {
+			line-height: 33px;
+		}
+		.toggle-ul__item {
+			background: none;
+			padding-right: 20px;
+		}
+	}
+}
+
+.nav-menu {
+	text-transform: uppercase;
+	font-family: 'Roboto',sans-serif;
+	background-color: #26d2fc;
+	&__title {
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 10px;
+		background-color: #333;
+		margin: 0;
+		padding: 32px 10px 24px 42px;
+	}
+	&__item-container {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+	&__slide {
+		opacity: 0;
+		z-index: -1;
+		visibility: hidden;
+		transition: opacity 1s;
+	}
+	&__item {
+		padding-left: 40px;
+		position: relative;
+		&:hover,&:focus,&.active {
+			background-color: #333;
+			.nav-menu__link {
+				color: #fff;
+			}
+			&>.nav-menu__slide {
+				visibility: visible;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+	}
+	&__link {
+		display: block;
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 42px;
+		color: #000;
+		&:hover,&:focus {
+			text-decoration: none;
+		}
 	}
 }
