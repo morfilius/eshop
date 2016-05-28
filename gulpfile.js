@@ -13,11 +13,17 @@ var gulp    	 = require('gulp'),
 	cssnano      = require('gulp-cssnano');
 
 
-gulp.task('sass',function() {
+gulp.task('sass',['mixins'],function() {
 	return gulp.src('app/sass/**/style.+(sass|scss)')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
 		.pipe(gulp.dest('app/css'))
+		.pipe(browserSync.stream());
+})
+
+gulp.task('mixins',function() {
+	return gulp.src('app/sass/**/*.+(sass|scss)')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(browserSync.stream());
 })
 
@@ -63,7 +69,7 @@ gulp.task('clear', function () {
     return cache.clearAll();
 });
 
-gulp.task('watch',['browser-sync','sass','scripts','css'],function() {
+gulp.task('watch',['browser-sync','sass','mixins','scripts','css'],function() {
 	gulp.watch('app/sass/**/*.+(sass|scss)',['sass']);
 	gulp.watch('app/js/**/*.js',browserSync.reload);
 	gulp.watch('app/*.html',browserSync.reload);
